@@ -1,0 +1,16 @@
+2025-11-03 12:35:21,901 | INFO | Loading raw dataset from data/raw/eda_data.csv
+2025-11-03 12:35:21,923 | INFO | ✅ Loaded dataset with 742 rows, 33 columns
+2025-11-03 12:35:21,923 | INFO | 🔧 Starting data cleaning...
+2025-11-03 12:35:21,923 | INFO | Dropped irrelevant columns: ['Unnamed: 0', 'Salary Estimate', 'Job Description', 'Competitors', 'company_txt', 'Company Name']
+2025-11-03 12:35:21,928 | INFO | Missing values before encoding:
+Rating     11
+Founded    50
+age        50
+dtype: int64
+2025-11-03 12:35:21,929 | INFO | One-hot encoded categorical features: ['job_simp', 'seniority', 'job_state']
+2025-11-03 12:35:21,931 | INFO | Scaled numeric columns and saved scaler.pkl to /app
+2025-11-03 12:35:21,931 | INFO | ✅ Cleaned data shape: (742, 68)
+2025-11-03 12:35:21,931 | INFO | Numeric columns scaled: ['age', 'desc_len', 'num_comp', 'min_salary', 'max_salary']
+2025-11-03 12:35:21,931 | INFO | Binary skill flags kept: ['python_yn', 'R_yn']
+2025-11-03 12:35:21,940 | INFO | ✅ Cleaned data saved to data/processed/cleaned_salary_data.csv
+2025-11-03 12:35:21,940 | INFO | Data preprocessing completed successfully!
